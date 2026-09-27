@@ -6,6 +6,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+
+import edu.uees.testing.availability.DisponibilidadClient;
+import edu.uees.testing.domain.EstadoReserva;
+import edu.uees.testing.domain.Reserva;
+import edu.uees.testing.notification.Notificador;
+import edu.uees.testing.repository.ReservaRepository;
+
 
 /**
  * Laboratorio 1 | Diseño de casos y JUnit 5
@@ -144,5 +155,55 @@ class ReservaServiceTest {
                 () -> servicio.calcularTotal(tipo, totalBase)
         );
         assertEquals("Total base inválido", ex.getMessage());
+    }
+
+    @Test
+    void reservaDisponibleSeConfirmaGuardaYNotifica() {
+        DisponibilidadClient disponibilidad = mock(DisponibilidadClient.class);
+        ReservaRepository repository = mock(ReservaRepository.class);
+        Notificador notificador = mock(Notificador.class);
+
+        when(disponibilidad.estaDisponible(any())).thenReturn(true);
+
+        ReservaService servicio = new ReservaService(disponibilidad, repository, notificador);
+        Reserva reserva = new Reserva("R-001", "NORMAL");
+
+        servicio.confirmar(reserva);
+
+        assertEquals(EstadoReserva.CONFIRMADA, reserva.getEstado());
+        verify(repository).guardar(reserva);
+        verify(notificador).enviarConfirmacion(reserva);
+    }
+
+    @Test
+    void reservaNoDisponibleNoSeGuardaNiNotifica() {
+        DisponibilidadClient disponibilidad = mock(DisponibilidadClient.class);
+        ReservaRepository repository = mock(ReservaRepository.class);
+        Notificador notificador = mock(Notificador.class);
+
+        when(disponibilidad.estaDisponible(any())).thenReturn(false);
+
+        ReservaService servicio = new ReservaService(disponibilidad, repository, notificador);
+        Reserva reserva = new Reserva("R-002", "NORMAL");
+
+        assertThrows(IllegalStateException.class, () -> servicio.confirmar(reserva));
+
+        verify(repository, never()).guardar(any());
+        verify(notificador, never()).enviarConfirmacion(any());
+    }
+
+    @Test
+    void reservaNulaNoConsultaDependencias() {
+        DisponibilidadClient disponibilidad = mock(DisponibilidadClient.class);
+        ReservaRepository repository = mock(ReservaRepository.class);
+        Notificador notificador = mock(Notificador.class);
+
+        ReservaService servicio = new ReservaService(disponibilidad, repository, notificador);
+
+        assertThrows(IllegalArgumentException.class, () -> servicio.confirmar(null));
+
+        verify(disponibilidad, never()).estaDisponible(any());
+        verify(repository, never()).guardar(any());
+        verify(notificador, never()).enviarConfirmacion(any());
     }
 }
