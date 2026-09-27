@@ -46,3 +46,184 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.lang.Thread.run(Thread.java:1474)
 
+2026.09.26 20:00:29 INFO  Started: Metals version 1.6.9 in folders 'D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6' for client Visual Studio Code 1.139.1.
+2026.09.26 20:00:29 INFO  Memory monitor started
+2026.09.26 20:00:35 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.09.26 20:01:02 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java
+2026.09.26 20:01:03 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/main/java/edu/uees/testing/service/ReservaService.java. Output:
+
+2026.09.26 20:06:00 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java
+2026.09.26 20:06:00 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/main/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:06:00 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:02 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:02 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:06:05 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8
+2026.09.26 20:06:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:06:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 14
+sept 26, 2026 8:06:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 10
+2026.09.26 20:06:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:06 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/main/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:06:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:06:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 12
+sept 26, 2026 8:06:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 18
+2026.09.26 20:06:07 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:07 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:06:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 20
+2026.09.26 20:06:07 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:08 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/main/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:06:08 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:06:08 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:00 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+2026.09.26 20:10:00 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:00 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/test/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+sept 26, 2026 8:10:01 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 31
+2026.09.26 20:10:01 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:00 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:02 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:37 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:37 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java
+sept 26, 2026 8:10:37 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 40
+2026.09.26 20:10:37 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:10:38 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 41
+2026.09.26 20:10:37 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:38 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:38 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:50 INFO  no build target found for d:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:10:50 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 50
+2026.09.26 20:10:50 INFO  no build target found for d:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:50 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:51 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+sept 26, 2026 8:10:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 51
+2026.09.26 20:10:50 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:51 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:10:52 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:15 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:34 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:34 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:55 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:55 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:56 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:11:56 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/test/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:12:03 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:03 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:03 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:04 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:04 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:04 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/test/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:12:05 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:05 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:22 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:25 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:12:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 20:12:35 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java
+sept 26, 2026 8:12:35 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 95
+2026.09.26 20:12:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 20:12:36 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 20:12:42 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 20:12:43 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 20:12:43 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 20:13:10 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:13:11 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+sept 26, 2026 8:13:11 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 129
+2026.09.26 20:13:11 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:13:12 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:13:18 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+2026.09.26 20:13:18 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:13:19 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:13:19 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:13:19 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:15:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:15:06 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+sept 26, 2026 8:15:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 153
+2026.09.26 20:15:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:15:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 155
+2026.09.26 20:15:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:15:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+sept 26, 2026 8:15:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 158
+sept 26, 2026 8:15:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 157
+sept 26, 2026 8:15:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTENCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "class:/d%3A/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Dise%C3%B1o%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/target/classes/edu/uees/testing/domain/Reserva.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "class" not installed
+	at java.base/java.nio.file.Path.of(Path.java:210)
+	at java.base/java.nio.file.Paths.get(Paths.java:95)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:221)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:810)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+2026.09.26 20:16:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:16:35 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+sept 26, 2026 8:16:35 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 160
+2026.09.26 20:16:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:16:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:16:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:16:35 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:19 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:20 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:20 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/test/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:17:20 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:20 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:20 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/test/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:17:28 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:30 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:30 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:17:30 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/test/java/edu/uees/testing/service/ReservaServiceTest.java. Output:
+
+2026.09.26 20:18:34 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:18:37 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java
+2026.09.26 20:18:37 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:18:37 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:18:37 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\test\java\edu\uees\testing\service\ReservaServiceTest.java. Using fallback presentation compiler.
+2026.09.26 20:27:09 INFO  Shutting down server
+2026.09.26 20:27:09 INFO  Memory monitor stopped
+2026.09.26 20:27:09 INFO  shutting down Metals
+2026.09.26 20:27:09 INFO  Exiting server
