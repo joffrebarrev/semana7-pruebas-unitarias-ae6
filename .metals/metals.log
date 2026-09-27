@@ -1,0 +1,48 @@
+2026.09.26 19:05:40 INFO  Started: Metals version 1.6.9 in folders 'D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6' for client Visual Studio Code 1.138.0.
+2026.09.26 19:05:40 INFO  Memory monitor started
+2026.09.26 19:05:42 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.09.26 19:05:42 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:05:43 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:01 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:16 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:16 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:16 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:17 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:17 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:18 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:38 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java
+2026.09.26 19:06:38 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:06:38 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/main/java/edu/uees/testing/service/ReservaService.java. Output:
+
+2026.09.26 19:07:16 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java
+2026.09.26 19:07:16 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:01 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:03 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:03 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:05 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:05 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:06 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:09 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:12 WARN  no build target for: D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java
+2026.09.26 19:10:12 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:10:12 WARN  Running javac-semanticdb failed for file:///D:/personal%20joffre%20barre/UESS%20-%20INGENIERIA%20COMPUTACION/Diseño%20de%20Software/UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6/src/main/java/edu/uees/testing/service/ReservaService.java. Output:
+
+2026.09.26 19:11:43 INFO  no build target found for D:\personal joffre barre\UESS - INGENIERIA COMPUTACION\Diseño de Software\UEES_UCOM0310_Semana7_Proyecto_BASE_Ae6\src\main\java\edu\uees\testing\service\ReservaService.java. Using fallback presentation compiler.
+2026.09.26 19:57:05 INFO  Shutting down server
+2026.09.26 19:57:05 INFO  Memory monitor stopped
+2026.09.26 19:57:05 INFO  shutting down Metals
+2026.09.26 19:57:05 INFO  Exiting server
+2026.09.26 19:57:06 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:214)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
