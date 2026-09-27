@@ -1,87 +1,105 @@
 # UEES - Diseño de Software (UCOM0310)
-## Semana 7: Pruebas Unitarias, Dobles de Prueba (Mocks/Stubs), JaCoCo y Git
+## Semana 7: Pruebas Unitarias, Dobles de Prueba (Stub/Mock) y Cobertura con JaCoCo
 
-Este repositorio contiene la evolución y resolución práctica de los laboratorios formativos de la **Semana 7** para la asignatura de **Diseño de Software** en la Universidad Espíritu Santo (UEES).
+Este repositorio contiene la resolución práctica de los laboratorios formativos de la **Semana 7**, para la asignatura de **Diseño de Software** (UCOM0310) en la Universidad Espíritu Santo (UEES).
 
----
-
-## 🛠️ Tecnologías y Herramientas Utilizadas
-- **Lenguaje de Programación:** Java 17+
-- **Gestor de Dependencias y Construcción:** Apache Maven
-- **Framework de Pruebas Unitarias:** JUnit 5 (Jupiter)
-- **Framework de Dobles de Prueba:** Mockito
-- **Análisis de Cobertura de Código:** JaCoCo Plugin (`0.8.12`)
-- **Control de Versiones:** Git & GitHub
+El sistema bajo prueba es un módulo de reservas (`ReservaService`) con dos tipos de comportamiento:
+- **Lógica pura**, sin dependencias externas: `puedeCancelar(int)` y `calcularTotal(String, double)`.
+- **Lógica con colaboradores externos**: `confirmar(Reserva)`, que depende de `DisponibilidadClient`, `ReservaRepository` y `Notificador`.
 
 ---
 
-## 🌳 Estructura del Repositorio y Ramas (Branches)
+## 🛠️ Tecnologías y herramientas
 
-- **`main`**: Contiene la línea base del proyecto y el desarrollo correspondiente al **Laboratorio 1** (matriz de 9 pruebas unitarias con patrón AAA).
-- **`test/lab2-dobles-cobertura`**: Rama dedicada a la implementación de aislamiento de dependencias usando **Stubs y Mocks** con Mockito, simulación de flujos de interacción y análisis de cobertura de JaCoCo.
-
----
-
-## 🧪 Resumen de Pruebas Unitarias (`ReservaServiceTest`)
-
-Se ejecutan un total de **12 pruebas unitarias con resultado 100% exitoso (`BUILD SUCCESS`)**, divididas en dos fases principales:
-
-### **1. Validación de Reglas de Negocio (Actividad 1 - AAA)**
-- `puedeCancelar_reservaPendiente_retornaTrue()`
-- `puedeCancelar_reservaConfirmada_retornaFalse()`
-- `puedeCancelar_reservaCancelada_retornaFalse()`
-- `calcularTotal_tipoNormal_aplicaTarifaBase()`
-- `calcularTotal_tipoVIP_aplicaDescuentoVIP()`
-- `calcularTotal_tipoCorporativo_aplicaDescuentoCorporativo()`
-- `calcularTotal_diasCeroOMenos_lanzaExcepcion()`
-- `calcularTotal_tipoDesconocido_lanzaExcepcion()`
-- `calcularTotal_tipoNulo_lanzaExcepcion()`
-
-### **2. Aislamiento e Interacción con Dobles de Prueba (Actividad 2 - Mockito)**
-- **Caso 1 (`reservaDisponibleSeConfirmaGuardaYNotifica`):**
-  - **Stub:** Controla que `disponibilidad.estaDisponible(...)` retorne `true`.
-  - **Verificación (Mock):** Comprueba el cambio de estado a `CONFIRMADA` y verifica que se ejecuten `repository.guardar(...)` y `notificador.enviarConfirmacion(...)`.
-- **Caso 2 (`reservaNoDisponibleNoSeGuardaNiNotifica`):**
-  - **Stub:** Controla que `disponibilidad.estaDisponible(...)` retorne `false`.
-  - **Verificación (Mock):** Asegura que se lance `IllegalStateException` y verifica que **nunca** (`never()`) se llame a `guardar(...)` ni a `enviarConfirmacion(...)`.
-- **Caso 3 (`reservaNulaNoConsultaDependencias`):**
-  - **Verificación (Mock):** Confirma que al recibir un objeto nulo se lance `IllegalArgumentException` y no se consulte a **ningún** colaborador.
+- **Lenguaje:** Java 21
+- **Gestor de build:** Apache Maven
+- **Pruebas unitarias:** JUnit 5 (Jupiter) `5.10.2`
+- **Dobles de prueba:** Mockito `5.12.0`
+- **Cobertura de código:** JaCoCo `0.8.12`
+- **Control de versiones:** Git & GitHub
 
 ---
 
-## 📊 Cobertura de Código con JaCoCo
+## 🌳 Ramas del repositorio
 
-El reporte de cobertura se genera automáticamente al ejecutar las pruebas:
+- **`main`** — Laboratorio 1: diseño de casos y suite JUnit 5 con estructura AAA para la lógica pura del servicio.
+- **`test/lab2-dobles-cobertura`** — Laboratorio 2: aislamiento de dependencias con Stub y Mock (Mockito) para `confirmar(Reserva)`, y análisis de cobertura con JaCoCo.
+
+---
+
+## 🧪 Suite de pruebas (`ReservaServiceTest` + `ReservaServiceConfirmarTest`)
+
+### 1. Reglas de negocio puras — `ReservaServiceTest` (Laboratorio 1, 9 pruebas)
+
+**`puedeCancelar(int horasAnticipacion)`** — regla: se permite cancelar con 2+ horas de anticipación.
+- `cincoHorasPermitenCancelar()`
+- `dosHorasEsElLimitePermitido()`
+- `unaHoraNoPermiteCancelar()`
+- `sinAnticipacionNoPermiteCancelar()`
+
+**`calcularTotal(String tipo, double totalBase)`** — descuentos: VIP 15%, ESTUDIANTE 10%, NORMAL sin descuento.
+- `normalNoRecibeDescuento()`
+- `vipRecibeQuincePorCiento()`
+- `estudianteRecibeDiezPorCiento()`
+- `vipConTotalBaseCeroDevuelveCero()`
+- `totalNegativoEsInvalido()` — lanza `IllegalArgumentException`
+
+### 2. Aislamiento con Stub y Mock — `ReservaServiceConfirmarTest` (Laboratorio 2, 4 pruebas)
+
+**Estrategia Stub** (dobles caseros, sin Mockito):
+- `reservaDisponibleSeConfirmaConStubs()` — usa un `DisponibilidadStub`, un repositorio en memoria y un notificador silencioso; verifica el estado final (`CONFIRMADA`) y que la reserva quedó guardada.
+
+**Estrategia Mock con Mockito** (verificación de interacción):
+- `reservaDisponibleSeConfirmaGuardaYNotifica()` — `disponibilidad` responde `true`; se verifica `repository.guardar(...)` y `notificador.enviarConfirmacion(...)`.
+- `reservaNoDisponibleLanzaExcepcionYNoGuardaNiNotifica()` — `disponibilidad` responde `false`; se lanza `IllegalStateException` y se verifica con `never()` que nunca se guarda ni se notifica.
+- `reservaNulaLanzaExcepcionYNoConsultaColaboradores()` — se lanza `IllegalArgumentException` y se verifica con `verifyNoInteractions(...)` que no se consulta a ningún colaborador.
+
+**Total: 13 pruebas — `BUILD SUCCESS`.**
+
+---
+
+## 📊 Cobertura de código con JaCoCo
+
+El reporte se genera automáticamente al ejecutar las pruebas:
 
 ```bash
 mvn clean test
+```
 
-Ubicación del Reporte:
-target/site/jacoco/index.html
+Ubicación del reporte: `target/site/jacoco/index.html`
 
-Conclusiones del Análisis de Cobertura:
-Diferencia entre Stub y Mock:
+**Conclusión del análisis:** un porcentaje alto de cobertura solo indica qué líneas se ejecutaron; no garantiza que las pruebas verifiquen correctamente el comportamiento. Las aserciones (`assertEquals`, `assertThrows`) y las verificaciones de Mockito (`verify`, `never`, `verifyNoInteractions`) son las que realmente protegen las reglas de negocio, en especial los casos límite (2 horas exactas) y los caminos de error de `confirmar(Reserva)`.
 
-Stub: Provee respuestas preprogramadas para controlar el camino de ejecución durante la prueba (when(...).thenReturn(...)).
+---
 
-Mock: Se enfoca en la verificación del comportamiento y llamadas realizadas entre objetos (verify(...)).
+## ⚙️ Instrucciones de ejecución local
 
-Interpretación de Cobertura:
+Clonar el repositorio:
 
-Obtener un alto porcentaje de cobertura en líneas/ramas garantiza qué código fue ejecutado, pero el valor real de la prueba radica en las aserciones (assertEquals, assertThrows, verify) que protegen directamente las reglas de negocio.
-
-⚙️ Instrucciones de Ejecución Local
-**1. Clonar el repositorio:**
-
-git clone [https://github.com/joffrebarrev/semana7-pruebas-unitarias-ae6.git](https://github.com/joffrebarrev/semana7-pruebas-unitarias-ae6.git)
+```bash
+git clone https://github.com/joffrebarrev/semana7-pruebas-unitarias-ae6.git
 cd semana7-pruebas-unitarias-ae6
+```
 
-** 2. Cambiar a la rama de desarrollo:**
+Cambiar a la rama del Laboratorio 2:
 
-Bash
-git switch test/lab2-dobles-cobertura
+```bash
+git checkout test/lab2-dobles-cobertura
+```
 
-**3. Ejecutar la suite completa de pruebas:**
+Ejecutar la suite completa:
 
-Bash
+```bash
 mvn clean test
+```
+
+---
+
+## 📁 Entregables
+
+- `docs/01_MATRIZ_CASOS_PLANTILLA.md` — matriz de 9 casos de prueba diseñados.
+- `entregables/UCOM0310 Barre Veliz Semana7 Act1 Laboratorio JUnit Casos.docx` — informe del Laboratorio 1 con evidencia de ejecución y microexperimento del bug de frontera.
+
+---
+
+Desarrollado por **Joffre Barre Veliz** como parte del laboratorio formativo de Diseño de Software — UEES, Semana 7.
