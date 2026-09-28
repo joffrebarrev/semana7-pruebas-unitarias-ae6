@@ -149,4 +149,8 @@ Después se abre un **Pull Request** de `ae6/suite-pruebas` hacia `main`, con la
 
 ## Declaración de uso de IA
 
+<<<<<<< HEAD
 Se utilizó un asistente de inteligencia artificial como apoyo para estructurar los Mocks con Mockito, corregir el orden de los argumentos del constructor y redactar la documentación. El código fue ejecutado y verificado por el estudiante con `mvn clean test`.
+=======
+Se utilizó un asistente de inteligencia artificial como apoyo para estructurar los Mocks con Mockito, corregir el orden de los argumentos del constructor y redactar la documentación. El código fue ejecutado y verificado por el estudiante con `mvn clean test`.
+>>>>>>> origin/main
