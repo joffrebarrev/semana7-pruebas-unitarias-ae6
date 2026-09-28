@@ -1,13 +1,16 @@
-# Matriz de casos
+# Matriz de Casos de Prueba - Actividad Ae6
 
-| ID | Regla | Escenario | Entrada | Esperado | Tipo | Riesgo |
-|---|---|---|---|---|---|---|
-| CP-01 | puedeCancelar | Anticipación habitual | 5 horas | true | Normal | Comprueba la regla general de cancelación |
-| CP-02 | puedeCancelar | Límite permitido | 2 horas | true | Límite | Detecta un uso incorrecto de `>` en vez de `>=` |
-| CP-03 | puedeCancelar | Debajo del límite | 1 hora | false | Límite | Protege la frontera inferior de la regla |
-| CP-04 | puedeCancelar | Sin anticipación | 0 horas | false | Extremo | No debe permitirse cancelación inmediata |
-| CP-05 | calcularTotal | Cliente NORMAL | ("NORMAL", 100) | 100.0 | Normal | Confirma que no se aplica descuento por defecto |
-| CP-06 | calcularTotal | Cliente VIP | ("VIP", 100) | 85.0 | Alternativo | Confirma el 15% de descuento VIP |
-| CP-07 | calcularTotal | Cliente ESTUDIANTE | ("ESTUDIANTE", 100) | 90.0 | Alternativo | Confirma el 10% de descuento estudiante |
-| CP-08 | calcularTotal | Total base en cero | ("VIP", 0) | 0.0 | Límite | Verifica que un descuento sobre 0 sigue siendo 0 |
-| CP-09 | calcularTotal | Total base negativo | ("NORMAL", -1) | IllegalArgumentException | Inválido | Protege contra una entrada fuera del contrato del método |
+| ID | Método | Escenario | Entrada | Esperado | Tipo | Doble de Prueba |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| CP-01 | puedeCancelar | Cancelación normal | horas = 5 | true | Normal | N/A |
+| CP-02 | puedeCancelar | Límite exacto superior | horas = 2 | true | Límite | N/A |
+| CP-03 | puedeCancelar | Debajo del límite | horas = 1 | false | Límite | N/A |
+| CP-04 | puedeCancelar | Horas negativas | horas = -1 | false / Excepción | Inválido | N/A |
+| CP-05 | calcularTotal | Descuento NORMAL | tipo = "NORMAL", monto = 100.0 | 100.0 | Normal | N/A |
+| CP-06 | calcularTotal | Descuento VIP | tipo = "VIP", monto = 100.0 | 85.0 | Alternativo | N/A |
+| CP-07 | calcularTotal | Descuento ESTUDIANTE | tipo = "ESTUDIANTE", monto = 100.0 | 90.0 | Alternativo | N/A |
+| CP-08 | calcularTotal | Total negativo o cero | tipo = "NORMAL", monto = -10.0 | IllegalArgumentException | Inválido | N/A |
+| CP-09 | confirmar | Disponibilidad exitosa | Reserva (valida), cliente disponible = true | Reserva CONFIRMADA | Normal | Stub (Disponibilidad), Mock (Repo/Notif) |
+| CP-10 | confirmar | Sin disponibilidad | Reserva (valida), cliente disponible = false | IllegalStateException | Alternativo | Stub (Disponibilidad) |
+| CP-11 | confirmar | Reserva nula | null | IllegalArgumentException | Inválido | N/A |
+| CP-12 | confirmar | Error al notificar | Reserva (valida), Notificador lanza excepción | Excepción propagada / Manejada | Excepción | Stub (Disponibilidad), Mock (Notificador) |

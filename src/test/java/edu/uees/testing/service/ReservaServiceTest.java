@@ -1,171 +1,109 @@
 package edu.uees.testing.service;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
-
 import edu.uees.testing.availability.DisponibilidadClient;
 import edu.uees.testing.domain.EstadoReserva;
 import edu.uees.testing.domain.Reserva;
 import edu.uees.testing.notification.Notificador;
 import edu.uees.testing.repository.ReservaRepository;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
 
-/**
- * Laboratorio 1 | Diseño de casos y JUnit 5
- *
- * Cubre las dos reglas de negocio puras del sistema de reservas:
- *  - puedeCancelar(int): frontera de 2 horas de anticipacion.
- *  - calcularTotal(String, double): descuentos por tipo de cliente.
- *
- * Se usa null para los colaboradores del servicio porque ninguno de los
- * dos metodos bajo prueba los consulta. En el Laboratorio 2 esta
- * estrategia sera reemplazada por Stub y Mock.
- */
 class ReservaServiceTest {
 
-    private final ReservaService servicio = new ReservaService(null, null, null);
+    private DisponibilidadClient disponibilidad;
+    private ReservaRepository repository;
+    private Notificador notificador;
+    private ReservaService servicio;
+
+    @BeforeEach
+    void setUp() {
+        disponibilidad = mock(DisponibilidadClient.class);
+        repository = mock(ReservaRepository.class);
+        notificador = mock(Notificador.class);
+        
+        // Orden correcto del constructor: (disponibilidad, repository, notificador)
+        servicio = new ReservaService(disponibilidad, repository, notificador);
+    }
 
     // ---------------------------------------------------------------
-    // Regla de cancelacion: puedeCancelar(int horasAnticipacion)
-    // Regla: se permite cancelar con 2 horas de anticipacion o mas.
+    // Regla de cancelación: puedeCancelar(int horasAnticipacion)
     // ---------------------------------------------------------------
 
     @Test
+    @DisplayName("CP-01: Cancelar con 5 horas de anticipación")
     void cincoHorasPermitenCancelar() {
-        // Arrange
-        int horas = 5;
-
-        // Act
-        boolean resultado = servicio.puedeCancelar(horas);
-
-        // Assert
-        assertTrue(resultado);
+        assertTrue(servicio.puedeCancelar(5));
     }
 
     @Test
+    @DisplayName("CP-02: Límite exacto de 2 horas de anticipación")
     void dosHorasEsElLimitePermitido() {
-        // Arrange
-        int horas = 2;
-
-        // Act
-        boolean resultado = servicio.puedeCancelar(horas);
-
-        // Assert
-        assertTrue(resultado);
+        assertTrue(servicio.puedeCancelar(2));
     }
 
     @Test
+    @DisplayName("CP-03: 1 hora no permite cancelar")
     void unaHoraNoPermiteCancelar() {
-        // Arrange
-        int horas = 1;
-
-        // Act
-        boolean resultado = servicio.puedeCancelar(horas);
-
-        // Assert
-        assertFalse(resultado);
+        assertFalse(servicio.puedeCancelar(1));
     }
 
     @Test
+    @DisplayName("CP-04: Sin anticipación (0 horas) no permite cancelar")
     void sinAnticipacionNoPermiteCancelar() {
-        // Arrange
-        int horas = 0;
-
-        // Act
-        boolean resultado = servicio.puedeCancelar(horas);
-
-        // Assert
-        assertFalse(resultado);
+        assertFalse(servicio.puedeCancelar(0));
     }
 
     // ---------------------------------------------------------------
     // Regla de descuentos: calcularTotal(String tipo, double totalBase)
-    // Regla: VIP 15%, ESTUDIANTE 10%, NORMAL sin descuento.
     // ---------------------------------------------------------------
 
     @Test
+    @DisplayName("CP-05: Cliente NORMAL no recibe descuento")
     void normalNoRecibeDescuento() {
-        // Arrange
-        String tipo = "NORMAL";
-        double totalBase = 100;
-
-        // Act
-        double total = servicio.calcularTotal(tipo, totalBase);
-
-        // Assert
-        assertEquals(100.0, total, 0.001);
+        assertEquals(100.0, servicio.calcularTotal("NORMAL", 100.0), 0.001);
     }
 
     @Test
+    @DisplayName("CP-06: Cliente VIP recibe 15% de descuento")
     void vipRecibeQuincePorCiento() {
-        // Arrange
-        String tipo = "VIP";
-        double totalBase = 100;
-
-        // Act
-        double total = servicio.calcularTotal(tipo, totalBase);
-
-        // Assert
-        assertEquals(85.0, total, 0.001);
+        assertEquals(85.0, servicio.calcularTotal("VIP", 100.0), 0.001);
     }
 
     @Test
+    @DisplayName("CP-07: Cliente ESTUDIANTE recibe 10% de descuento")
     void estudianteRecibeDiezPorCiento() {
-        // Arrange
-        String tipo = "ESTUDIANTE";
-        double totalBase = 100;
-
-        // Act
-        double total = servicio.calcularTotal(tipo, totalBase);
-
-        // Assert
-        assertEquals(90.0, total, 0.001);
+        assertEquals(90.0, servicio.calcularTotal("ESTUDIANTE", 100.0), 0.001);
     }
 
     @Test
+    @DisplayName("CP-08: Cliente VIP con total base cero devuelve cero")
     void vipConTotalBaseCeroDevuelveCero() {
-        // Arrange
-        String tipo = "VIP";
-        double totalBase = 0;
-
-        // Act
-        double total = servicio.calcularTotal(tipo, totalBase);
-
-        // Assert
-        assertEquals(0.0, total, 0.001);
+        assertEquals(0.0, servicio.calcularTotal("VIP", 0.0), 0.001);
     }
 
     @Test
+    @DisplayName("CP-08b: Total base negativo lanza IllegalArgumentException")
     void totalNegativoEsInvalido() {
-        // Arrange
-        String tipo = "NORMAL";
-        double totalBase = -1;
-
-        // Act & Assert
         IllegalArgumentException ex = assertThrows(
                 IllegalArgumentException.class,
-                () -> servicio.calcularTotal(tipo, totalBase)
+                () -> servicio.calcularTotal("NORMAL", -1.0)
         );
         assertEquals("Total base inválido", ex.getMessage());
     }
 
+    // ---------------------------------------------------------------
+    // Confirmación y Dobles de Prueba (Stub / Mock)
+    // ---------------------------------------------------------------
+
     @Test
+    @DisplayName("CP-09: Reserva disponible se confirma, guarda y notifica")
     void reservaDisponibleSeConfirmaGuardaYNotifica() {
-        DisponibilidadClient disponibilidad = mock(DisponibilidadClient.class);
-        ReservaRepository repository = mock(ReservaRepository.class);
-        Notificador notificador = mock(Notificador.class);
-
         when(disponibilidad.estaDisponible(any())).thenReturn(true);
-
-        ReservaService servicio = new ReservaService(disponibilidad, repository, notificador);
         Reserva reserva = new Reserva("R-001", "NORMAL");
 
         servicio.confirmar(reserva);
@@ -176,14 +114,9 @@ class ReservaServiceTest {
     }
 
     @Test
+    @DisplayName("CP-10: Reserva no disponible lanza excepción y no se guarda ni notifica")
     void reservaNoDisponibleNoSeGuardaNiNotifica() {
-        DisponibilidadClient disponibilidad = mock(DisponibilidadClient.class);
-        ReservaRepository repository = mock(ReservaRepository.class);
-        Notificador notificador = mock(Notificador.class);
-
         when(disponibilidad.estaDisponible(any())).thenReturn(false);
-
-        ReservaService servicio = new ReservaService(disponibilidad, repository, notificador);
         Reserva reserva = new Reserva("R-002", "NORMAL");
 
         assertThrows(IllegalStateException.class, () -> servicio.confirmar(reserva));
@@ -193,13 +126,8 @@ class ReservaServiceTest {
     }
 
     @Test
+    @DisplayName("CP-11: Reserva nula lanza excepción y no consulta dependencias")
     void reservaNulaNoConsultaDependencias() {
-        DisponibilidadClient disponibilidad = mock(DisponibilidadClient.class);
-        ReservaRepository repository = mock(ReservaRepository.class);
-        Notificador notificador = mock(Notificador.class);
-
-        ReservaService servicio = new ReservaService(disponibilidad, repository, notificador);
-
         assertThrows(IllegalArgumentException.class, () -> servicio.confirmar(null));
 
         verify(disponibilidad, never()).estaDisponible(any());

@@ -56,32 +56,35 @@ El reporte de cobertura se genera automáticamente al ejecutar las pruebas:
 ```bash
 mvn clean test
 
-Ubicación del Reporte:
+### Ubicación del Reporte:
 target/site/jacoco/index.html
+---
 
-Conclusiones del Análisis de Cobertura:
+### Conclusiones del Análisis de Cobertura:
 Diferencia entre Stub y Mock:
 
 Stub: Provee respuestas preprogramadas para controlar el camino de ejecución durante la prueba (when(...).thenReturn(...)).
 
 Mock: Se enfoca en la verificación del comportamiento y llamadas realizadas entre objetos (verify(...)).
-
-Interpretación de Cobertura:
+---
+### Interpretación de Cobertura:
 
 Obtener un alto porcentaje de cobertura en líneas/ramas garantiza qué código fue ejecutado, pero el valor real de la prueba radica en las aserciones (assertEquals, assertThrows, verify) que protegen directamente las reglas de negocio.
-
-⚙️ Instrucciones de Ejecución Local
-**1. Clonar el repositorio:**
+---
+### ⚙️ Instrucciones de Ejecución Local
+---
+###**1. Clonar el repositorio:**
 
 git clone [https://github.com/joffrebarrev/semana7-pruebas-unitarias-ae6.git](https://github.com/joffrebarrev/semana7-pruebas-unitarias-ae6.git)
 cd semana7-pruebas-unitarias-ae6
-
-** 2. Cambiar a la rama de desarrollo:**
+---
+###** 2. Cambiar a la rama de desarrollo:**
 
 Bash
 git switch test/lab2-dobles-cobertura
-
-**3. Ejecutar la suite completa de pruebas:**
+---
+###**3. Ejecutar la suite completa de pruebas:**
 
 Bash
 mvn clean test
+---
